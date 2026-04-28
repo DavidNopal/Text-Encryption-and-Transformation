@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 0px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  align-items: stretch;
+  margin-top: 40px;
+}
+
+.box,
+.explanation-panel,
+.chain-section,
+.history {
+  background: rgba(31, 41, 55, 0.95);
+  border: 1px solid #374151;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.box h2,
+.explanation-panel h2,
+.chain-section h2,
+.history h2 {
+  margin-top: 0;
+  color: #f8fafc;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  border: 1px solid #475569;
+  padding: 14px;
+  font-size: 16px;
+  resize: none;
+  background: #0f172a;
+  color: white;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #22c55e;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s ease;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.clear-btn {
+  background: #dc2626;
+}
+
+.clear-btn:hover {
+  background: #b91c1c;
+}
+
+.shift-control {
+  margin: 30px auto 10px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 18px;
+  max-width: 400px;
+}
+
+.shift-control label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.shift-control input {
+  width: 100%;
+}
+
+.explanation-panel,
+.chain-section,
+.history {
+  width: 100%;
+  max-width: none;
+  margin: 35px auto 0;
+  text-align: left;
+}
+
+.explanation-panel p,
+.chain-section p,
+.history p {
+  color: #cbd5e1;
+}
+
+.explanation-panel pre {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 220px;
+  display: block;
+  width: 100%;
+}
+
+.history-item {
+  background: #111827;
+  border: 1px solid #374151;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.history-item p {
+  margin: 6px 0;
+}
+
+strong {
+  color: #38bdf8;
+}
+
+.copy-btn {
+  margin-top: 15px;
+  background: #22c55e;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(31, 48, 89, 0.659), rgba(15, 23, 42, 0.9)),
+    url("./assets/Encryp.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.header p {
+  font-size: 22px;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.instructions {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.arrow {
+  width: 170px;
+  /* adjust this */
+  height: auto;
+  /* keeps proportions */
+}
+
+.clear-btn {
+  background: #dc2626;
+  margin-top: 15px;
+}
+
+.copied-msg {
+  margin-top: 10px;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
