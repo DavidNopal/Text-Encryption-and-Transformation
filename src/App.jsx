@@ -296,7 +296,7 @@ ${output}`;
   return (
     <div className="app">
       <div className="header">
-        <h1>Text Encrypter and Decrypter</h1>
+        <h1>Text Encryption and Transformation Tool</h1>
         <p className="subtitle">
           Transform, encode, and decode your text with ease.
         </p>
